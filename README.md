@@ -17,8 +17,8 @@ By using different classification models, the goal is to accurately predict at a
 churn in the next 30 days. The models are trained on previous user behavior calculated at different time windows to provide
 the model with patterns and changes in each customer's behavior. 
 
-Since some provided datasets are very large, I had to use other tools more adapted for big data to perform transformations and aggregations.
+Since some provided datasets are very large, I had to use other tools more adapted for Big Data to perform transformations and aggregations.
 The data consists of time series values, so the temporal aspect of the data must be correctly handled in feature engineering 
-but also when doing training and cross-validation.
+and when doing training and cross-validation.
 
 
