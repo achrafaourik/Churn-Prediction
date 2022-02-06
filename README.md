@@ -33,7 +33,6 @@ the business decisions takers to make wise decisions by taking into consideratio
 
 Music Streaming providers like KKBox could really benefit from integration data science techniques and generate more 
 business value since the data collected from their clients is really informative.
-
 You can find <a href="./eda.ipynb">here</a> the Exploratory Data Analysis for generating initial insights in regard to the behavior of churning 
 clients and the difference between them and renewing clients. <br> 
 The EDA step of the project is very important since it can point us at the right variables that are related to the churn 
@@ -50,20 +49,27 @@ about what they should do in order to keep their customers.
 
 ### Some Exploratory Data Analysis 
 
-#### Preliminary Analysis: Distribution of Churn
+#### Preliminary Analysis: 
 
-<p align="center"><img src="./images/churn_distribution.png" width=1600><p>
+##### Churn distribution:
 
-
-
-
+<p align="center"><img src="./images/churn_distribution.png" width=1200><p>
 
 
+##### By Gender
+<p align="center"><img src="./images/gender_churn.png" width=600><p>
 
+##### By Age
+<p align="center"><img src="./images/age.png" width=600><p>
 
+##### By Tenure
+<p align="center"><img src="./images/tenure.png" width=600><p>
 
+##### By Amount Paid
+<p align="center"><img src="./images/amount_paid.png" width=600><p>
 
-
+##### By Number of Daily Transactions
+<p align="center"><img src="./images/daily_transactions_number.png" width=600><p>
 
 
 
