@@ -78,10 +78,10 @@ about what they should do in order to keep their customers.
 <p align="center"><img src="./images/auto_renew.png" width=450><p>
 
 ##### By Payment Method
-<p align="center"><img src="./images/payment_method.png" width=450><p>
+<p align="center"><img src="./images/payment_method.png" width=1200><p>
 
 ##### By Registration Method
-<p align="center"><img src="./images/registration_method.png" width=450><p>
+<p align="center"><img src="./images/registration_method.png" width=750><p>
 
 ##### By Total Number of unique songs
 <p align="center"><img src="./images/total_nbr_unique.png" width=450><p>
