@@ -34,13 +34,13 @@ and when doing training and cross-validation.
  
   <strong>Members Dataset:</strong>
 
-| **Column names**       | Description                           |
-|:-----------------------|:--------------------------------------|
-| msno                   | Unique identifier of the client       |
-| city                   | city of origin of the client          |
-| bd                     | age of the client                     |
-| registered_via         | registration method used              |
-| registration_init_time | first subscription date of the client |
+| **Column names**       | Description                                  |
+|:-----------------------|:---------------------------------------------|
+| msno                   | Unique identifier of the client              |
+| city                   | city of origin of the client                 |
+| bd                     | age of the client                            |
+| registered_via         | registration method used                     |
+| registration_init_time | date of the first subscription of the client |
 
   <strong>User logs Dataset:</strong>
 
@@ -56,9 +56,19 @@ and when doing training and cross-validation.
 | num_unq          | number of unique songs played                                   |
 | total_secs       | total seconds played                                            |
 
+  <strong>Transactions Dataset:</strong>
 
-
- 
+| **Column names**       | Description                                                            |
+|:-----------------------|:-----------------------------------------------------------------------|
+| msno                   | Unique identifier of the client                                        |
+| payment_method_id      | payment method used                                                    |
+| payment_plan_days      | length of membership plan in days                                      |
+| plan_list_price        | listing price in New Taiwan Dollar (NTD)                               |
+| actual_amount_paid     | actual amount paid in New Taiwan Dollar (NTD)                          |
+| is_auto_renew          | flag if the client has the auto-renew feature ON                       |
+| transaction_date       | date of transaction - format %Y%m%d                                    |
+| membership_expire_date | Date of expiration of the client's subscription                        |
+| is_cancel              | flag (value of 1) if the transaction is a cancel otherwise flag with 0 |
 
 </details>
 
