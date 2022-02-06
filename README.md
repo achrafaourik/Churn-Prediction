@@ -88,3 +88,18 @@ about what they should do in order to keep their customers.
 
 ##### By Total Number of seconds listened
 <p align="center"><img src="./images/total_seconds.png" width=450><p>
+
+#### General insights generated from previous EDA:
+- We can see from the graph that the data is **heavily skewed and *unbalanced***. We can take care of this by  **balancing the classes** using either or combining different of the following methods: **larger weights** for the positive class in the cost function, **under-sampling** the majority class or **over-sampling** the minority class (using **SMOTE** for example). 
+- We can notice here that there isn't a difference between the behavior of the **churning clients and newcomers**: **the distribution of gender is the same for both of them**.
+- We can see from the previous graph that plots the distribution of the clients' age in contrast with churn that **the clients that actually churn have a lower age compared to the clients that renew their subscription**. This insight is actually quite intuitive since the younger population are more likely to be financially dependent and make less money than the older clients.
+- The insight that we can get from the previous graph is that the new clients are more likely to churn compared to loyal customers. This means that the company should focus its efforts in coming up with incentives to keep the new clients.
+- A very important insight can be found from the previous graph and that is that **clients that follow cheaper plans are more likely to churn**!
+- We can clearly see from the previous table especially by looking at the median values that there is **a peak of cancel transactions at Mondays**, the cancels are also the lowest on saturdays and sundays meaning that the clients are **less likely to cancel their memberships on the weekends**.
+- The previous table gives a very important insight regarding the canceling behavior of the clients relative to the month of the year. We can see that the **cancels start to grow towards the end of the year** (starting **from October all the way up to January**) and **flatten throughout the rest of the year**.
+- We can clearly see from the previous graph a very important insight regarding the difference of behaviors between the churners and renewers and that is that the **clients that don't actually have auto renew feature on are more likely to churn**! The company should focus more of its efforts to keep the clients that don't have the auto renew feature on or convince them to activate it.
+- We can see from the previous graph that there is difference in the behavior between churners and renewing clients in the fact that the **churners tend to use the payment method <ins>38</ins> more frequently**.
+- We can see from the previous graph that there is a difference in the behavior of the clients regarging the channels that they use for subscriping and cancelling their memberships: **clients frequently use the registration method "7"** for subscribing while **the churners use the "9" registration method**. 
+- We can see from the previous graph that there is a slight difference between the listening behaviors of the churners and clients that renew and that is the fact that **clients who spend less overall time listening are more likely to churn**!
+
+
