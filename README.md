@@ -33,7 +33,7 @@ the business decisions takers to make wise decisions by taking into consideratio
 
 Music Streaming providers like KKBox could really benefit from integration data science techniques and generate more 
 business value since the data collected from their clients is really informative.
-You can find <a href="./eda.ipynb">here</a> the Exploratory Data Analysis for generating initial insights in regard to the behavior of churning 
+You can find <a href="https://nbviewer.org/github/achrafaourik/Customer-Retention/blob/master/eda.ipynb">here</a> the Exploratory Data Analysis for generating initial insights in regard to the behavior of churning 
 clients and the difference between them and renewing clients. <br> 
 The EDA step of the project is very important since it can point us at the right variables that are related to the churn 
 rate of the clients. <br>
