@@ -21,4 +21,4 @@ Since some provided datasets are very large, I had to use other tools more adapt
 The data consists of time series values, so the temporal aspect of the data must be correctly handled in feature engineering 
 and when doing training and cross-validation.
 
-
+## Insights generated from EDA
