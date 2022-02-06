@@ -106,6 +106,11 @@ about what they should do in order to keep their customers.
 
 <p align="center"><img src="./images/churn_distribution.png" width=1200><p>
 
+#### Evolution of Churn (in numbers)
+<p align="center"><img src="./images/evolution_churn_numbers.png" width=1200><p>
+
+#### Evolution of Churn (in percentage)
+<p align="center"><img src="./images/evolution_churn_percentage.png.png" width=1200><p>
 
 #### By Gender
 <p align="center"><img src="./images/gender_churn.png" width=450><p>
