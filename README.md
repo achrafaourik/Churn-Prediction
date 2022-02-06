@@ -49,3 +49,21 @@ Having access to both EDA and the predictive model is very useful for the compan
 about what they should do in order to keep their customers.
 
 ### Some Exploratory Data Analysis 
+
+#### Preliminary Analysis: Distribution of Churn
+
+<p align="center"><img src="./images/churn_distribution.png" width = 600><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
