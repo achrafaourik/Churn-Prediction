@@ -69,7 +69,7 @@ about what they should do in order to keep their customers.
 <p align="center"><img src="./images/amount_paid.png" width=450><p>
 
 ##### By Number of Daily Transactions
-<p align="center"><img src="./images/daily_transactions_number.png" width=450><p>
+<p align="center"><img src="./images/daily_transactions_number.png" width=1250><p>
 
 
 
