@@ -32,7 +32,9 @@ The use of machine learning and data mining techniques has exploded during the l
 the business decisions takers to make wise decisions by taking into consideration the insights generated from them.
 
 Music Streaming providers like KKBox could really benefit from integration data science techniques and generate more 
-business value since the data collected from their clients is really informative.
+business value since the data collected from their clients is really informative. 
+
+
 You can find <a href="https://nbviewer.org/github/achrafaourik/Customer-Retention/blob/master/eda.ipynb">here</a> the Exploratory Data Analysis for generating initial insights in regard to the behavior of churning 
 clients and the difference between them and renewing clients. <br> 
 The EDA step of the project is very important since it can point us at the right variables that are related to the churn 
@@ -47,7 +49,7 @@ You can find the notebook of the modeling phase <a href="#">here</a>.
 Having access to both EDA and the predictive model is very useful for the company to make intelligent decisions 
 about what they should do in order to keep their customers.
 
-### Some Exploratory Data Analysis 
+### Some Exploratory Data Analysis (Churn Distribution + Features in contrast with Churn)
 
 #### Preliminary Analysis: 
 
