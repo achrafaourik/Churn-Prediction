@@ -71,7 +71,20 @@ about what they should do in order to keep their customers.
 ##### By Number of Daily Transactions
 <p align="center"><img src="./images/daily_transactions_number.png" width=1650 height=600><p>
 
-##### By Number of Daily Transactions
+##### By Number of Monthly Transactions
 <p align="center"><img src="./images/monthly_transactions_number.png" width=1650 height=600><p>
 
+##### By Auto Renew Feature
+<p align="center"><img src="./images/auto_renew.png" width=450><p>
 
+##### By Payment Method
+<p align="center"><img src="./images/payment_method.png" width=450><p>
+
+##### By Registration Method
+<p align="center"><img src="./images/registration_method.png" width=450><p>
+
+##### By Total Number of unique songs
+<p align="center"><img src="./images/total_nbr_unique.png" width=450><p>
+
+##### By Total Number of seconds listened
+<p align="center"><img src="./images/total_seconds.png" width=450><p>
