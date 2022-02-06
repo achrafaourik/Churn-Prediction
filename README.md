@@ -52,7 +52,7 @@ about what they should do in order to keep their customers.
 
 #### Preliminary Analysis: Distribution of Churn
 
-<p align="center"><img src="./images/churn_distribution.png" width = 600><p>
+<p align="center"><img src="./images/churn_distribution.png" width=1600><p>
 
 
 
