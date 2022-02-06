@@ -51,47 +51,45 @@ about what they should do in order to keep their customers.
 
 ### Some Exploratory Data Analysis (Churn Distribution + Features in contrast with Churn)
 
-#### Preliminary Analysis: 
-
-##### Churn distribution:
+#### Churn distribution:
 
 <p align="center"><img src="./images/churn_distribution.png" width=1200><p>
 
 
-##### By Gender
+#### By Gender
 <p align="center"><img src="./images/gender_churn.png" width=450><p>
 
-##### By Age
+#### By Age
 <p align="center"><img src="./images/age.png" width=450><p>
 
-##### By Tenure
+#### By Tenure
 <p align="center"><img src="./images/tenure.png" width=450><p>
 
-##### By Amount Paid
+#### By Amount Paid
 <p align="center"><img src="./images/amount_paid.png" width=450><p>
 
-##### By Number of Daily Transactions
+#### By Number of Daily Transactions
 <p align="center"><img src="./images/daily_transactions_number.png" width=1650 height=600><p>
 
-##### By Number of Monthly Transactions
+#### By Number of Monthly Transactions
 <p align="center"><img src="./images/monthly_transactions_number.png" width=1650 height=600><p>
 
-##### By Auto Renew Feature
+#### By Auto Renew Feature
 <p align="center"><img src="./images/auto_renew.png" width=450><p>
 
-##### By Payment Method
+#### By Payment Method
 <p align="center"><img src="./images/payment_method.png" width=1200><p>
 
-##### By Registration Method
+#### By Registration Method
 <p align="center"><img src="./images/registration_method.png" width=750><p>
 
-##### By Total Number of unique songs
+#### By Total Number of unique songs
 <p align="center"><img src="./images/total_nbr_unique.png" width=450><p>
 
-##### By Total Number of seconds listened
+#### By Total Number of seconds listened
 <p align="center"><img src="./images/total_seconds.png" width=450><p>
 
-#### General insights generated from previous EDA:
+### General insights generated from previous EDA:
 - The data is **heavily skewed and *unbalanced***. We can take care of this by  **balancing the classes** using either or combining different of the following methods: **larger weights** for the positive class in the cost function, **under-sampling** the majority class or **over-sampling** the minority class (using **SMOTE** for example). 
 - There isn't a difference between the behavior of the **churning clients and newcomers**: **the distribution of gender is the same for both of them**.
 - **The clients that actually churn have are younger compared to the clients that renew their subscription**. This insight is actually quite intuitive since the younger population are more likely to be financially dependent and make less money than the older clients.
