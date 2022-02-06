@@ -22,19 +22,19 @@ The data consists of time series values, so the temporal aspect of the data must
 and when doing training and cross-validation.
 
 <details>
-  <summary><strong>Click to see all measures and dimensions of the datasets provided </strong></summary>
+  <summary><strong>Click to see all columns (measures or features) of the datasets provided </strong></summary>
 
   <strong>Train Dataset:</strong>
 
 
-| **Column names**   | Description                                                                                                                                                                                              |
-|:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| msno               | Unique identifier of the client                                                                                                                                                                          |
- | is_churn           | This is the target variable.<br/> Churn is defined as whether or not a user has subscribed within 30 days of the expiration date. is_churn = 1 means that the client churned, is_churn = 0 means renewal |
+| **Column** | Description                                                                                                                                                                                              |
+|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| msno       | Unique identifier of the client                                                                                                                                                                          |
+ | is_churn   | This is the target variable.<br/> Churn is defined as whether or not a user has subscribed within 30 days of the expiration date. is_churn = 1 means that the client churned, is_churn = 0 means renewal |
  
   <strong>Members Dataset:</strong>
 
-| **Column names**       | Description                                  |
+| **Column**             | Description                                  |
 |:-----------------------|:---------------------------------------------|
 | msno                   | Unique identifier of the client              |
 | city                   | city of origin of the client                 |
@@ -44,21 +44,21 @@ and when doing training and cross-validation.
 
   <strong>User logs Dataset:</strong>
 
-| **Column names** | Description                                                     |
-|:-----------------|:----------------------------------------------------------------|
-| msno             | Unique identifier of the client                                 |
-| date             | date of aggregation of listening statistics                     |
-| num_25           | number of songs played less than 25% of the song length         |
-| num_50           | number of songs played between 25% to 50% of of the song length |
-| num_75           | number of songs played between 50% to 75% of of the song length |
-| num_985          | number of songs played between 75% to 98.5% of the song length  |
-| num_100          | number of songs played over 98.5% of the song length            |
-| num_unq          | number of unique songs played                                   |
-| total_secs       | total seconds played                                            |
+| **Column**      | Description                                                     |
+|:----------------|:----------------------------------------------------------------|
+| msno            | Unique identifier of the client                                 |
+| date            | date of aggregation of listening statistics                     |
+| num_25          | number of songs played less than 25% of the song length         |
+| num_50          | number of songs played between 25% to 50% of of the song length |
+| num_75          | number of songs played between 50% to 75% of of the song length |
+| num_985         | number of songs played between 75% to 98.5% of the song length  |
+| num_100         | number of songs played over 98.5% of the song length            |
+| num_unq         | number of unique songs played                                   |
+| total_secs      | total seconds played                                            |
 
   <strong>Transactions Dataset:</strong>
 
-| **Column names**       | Description                                                            |
+| **Column**             | Description                                                            |
 |:-----------------------|:-----------------------------------------------------------------------|
 | msno                   | Unique identifier of the client                                        |
 | payment_method_id      | payment method used                                                    |
