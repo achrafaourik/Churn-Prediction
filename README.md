@@ -93,7 +93,7 @@ about what they should do in order to keep their customers.
 - The data is **heavily skewed and *unbalanced***. We can take care of this by  **balancing the classes** using either or combining different of the following methods: **larger weights** for the positive class in the cost function, **under-sampling** the majority class or **over-sampling** the minority class (using **SMOTE** for example). 
 - There isn't a difference between the behavior of the **churning clients and newcomers**: **the distribution of gender is the same for both of them**.
 - **The clients that actually churn have are younger compared to the clients that renew their subscription**. This insight is actually quite intuitive since the younger population are more likely to be financially dependent and make less money than the older clients.
-- **The new clients are more likely to churn** compared to loyal customers. This means that the company should focus its efforts in coming up with incentives to keep the new clients.
+- **The new clients are more likely to churn** compared to loyal customers. This means that the company should focus more if its efforts in coming up with incentives to keep the new clients.
 - **Clients that follow cheaper plans are more likely to churn**!
 - There is **a peak of cancel transactions at Mondays**, the cancels are also the lowest on saturdays and sundays meaning that the clients are **less likely to cancel their memberships on the weekends**.
 - **Cancels start to increase towards the end of the year** (starting **from October all the way up to January**) and **flatten throughout the rest of the year**.
