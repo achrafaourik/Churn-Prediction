@@ -160,7 +160,7 @@ about what they should do in order to keep their customers.
 
 ### Clustering of KKBox's clients
 
-After following several methodologies to select the appropriate number of clusters
+After following several approaches to select the appropriate number of clusters
 for the KMeans algorithm in this <a href="./clustering_notebook">notebook</a>, I have found
 that choosing n_clusters=5 is the best for this use case's dataset.
 
