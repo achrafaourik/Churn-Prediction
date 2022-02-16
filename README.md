@@ -158,4 +158,20 @@ about what they should do in order to keep their customers.
 - **Clients frequently use the registration method "7"** for subscribing while **the churners use the "9" registration method**. 
 - **Clients who spend less overall time listening are more likely to churn**!
 
+### Clustering of KKBox's clients
 
+After following several methodologies to select the appropriate number of clusters
+for the KMeans algorithm in this <a href="./clustering_notebook">notebook</a>, I have found
+that choosing n_clusters=5 is the best for this use case's dataset.
+
+#### KMeans algorithm centroids 
+<p align="center"><img src="./images/clusters_centroids.png" width=950><p>
+
+**Insights generated from the centroids of the KMeans clustering :**
+
+- Cluster number **5** contains the oldest clients of the database (despite not being old with an average age of **23** years old), these clients have the **most time spent listening** with both the total of seconds listens and the total number of unique songs listened. The **total amount paid for the cluster is very high** (3100 NTD) and close to the highest  among all clusters.
+- Cluster number **4** contains the **highest percentage of the clients** (**35%**): they are **the youngest but they are also the ones that spend the least time on the streaming service and also spend the least amount of money**.
+- Cluster number **1** contains a third of the clients database, they also have **the highest total amount paid (3258 NTD) and the most days subscribed**.
+
+#### 2D visualization of KMeans clusters using PCA
+<p align="center"><img src="./images/pca_kmeans.png" width=950><p>
