@@ -159,9 +159,10 @@ about what they should do in order to keep their customers.
 - **Clients who spend less overall time listening are more likely to churn**!
 
 ### Clustering of KKBox's clients
+[(Back to top)](#problem-statement)
 
 After following several approaches to select the appropriate number of clusters
-for the KMeans algorithm in this <a href="./clustering_notebook">notebook</a>, I have found
+for the KMeans algorithm in this <a href="./Clustering">notebook</a>, I have found
 that choosing n_clusters=5 is the best for this use case's dataset.
 
 #### KMeans algorithm centroids 
