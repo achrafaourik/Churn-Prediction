@@ -157,6 +157,6 @@ Thumbs.db
 # profiling data
 .prof
 
-# huge datasets
-dfMasterTable.csv
+# csv files
+*.csv
 
