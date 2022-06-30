@@ -159,7 +159,6 @@ about what they should do in order to keep their customers.
 - **Clients who spend less overall time listening are more likely to churn**!
 
 ### Clustering of KKBox's clients
-[(Back to top)](#problem-statement)
 
 After following several approaches to select the appropriate number of clusters
 for the KMeans algorithm in this <a href="./Clustering">notebook</a>, I have found
@@ -176,3 +175,16 @@ that choosing n_clusters=5 is the best for this use case's dataset.
 
 #### 2D visualization of KMeans clusters using PCA
 <p align="center"><img src="./images/pca_kmeans.png" width=950><p>
+
+### Feature Engineering
+
+The step that always follows the loading and cleaning phase is to do **Feature Engineering**.
+Feature Engineering is constructing features or variables (inputs for the model) that we think
+have high predictive power and will increase the model's performance in predicting the target
+variable. 
+
+The features or input variables are obtained by applying multiple transformations, calculations
+and aggregations on the raw data. They are created by using multiple `Python` frameworks,
+since some datasets provided cannot fit in the computer's memory and have to processed using
+different libraries like `vaex` and `dask`.
+
