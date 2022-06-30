@@ -159,6 +159,13 @@ about what they should do in order to keep their customers.
 - **Clients who spend less overall time listening are more likely to churn**!
 
 ### Clustering of KKBox's clients
+**Clustering** is part of the unsupervised learning with a goal of **grouping together points that
+are similar to each other while being different from the other points belonging to the other
+groups** (clusters).
+
+This is very useful especially for our use case since we can be able to target a small number
+of groups of clients that we know are fairly similar to each other when doing marketing campaigns
+which is more practical, efficient and cheaper than to look at each client separately.
 
 After following several approaches to select the appropriate number of clusters
 for the KMeans algorithm in this <a href="./Clustering">notebook</a>, I have found
@@ -187,4 +194,28 @@ The features or input variables are obtained by applying multiple transformation
 and aggregations on the raw data. They are created by using multiple `Python` frameworks,
 since some datasets provided cannot fit in the computer's memory and have to processed using
 different libraries like `vaex` and `dask`.
+
+Optimizations have been made to the code such as parallel computing of features to further reduce
+the computation time. So, **the time needed to process all features is divided by the number
+of cores at our disposal**.
+
+#### **List of features used:**
+
+  <strong>Features made using the members Dataset:</strong>
+
+| **Feature**    | Description                                                       |
+|:---------------|:------------------------------------------------------------------|
+| bd             | Age of the client (in years)                                      |
+| city           | One hot encoding of the top 5 most recurring cities               |
+| registered_via | One hot encoding of the top 5 most recurring registration methods |
+| tenure_days    | number of days since the client started being a member            |
+
+
+  <strong>Features made using the transactions Dataset:</strong>
+
+| **Feature**                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| last_login_days              | Number of days since last login                                                                                                                                                                                                                                                                                                                                                                                                         |
+| stats_login_monthly          | statistics of number of monthly logins: <br/> - **nbr_logins_monthly_mean** : average number of monthly logins	<br/>- **nbr_logins_monthly_max**: max number of monthly logins<br/>- **nbr_logins_monthly_min** : minimum number of monthly logins	<br/>- **nbr_logins_monthly_std** : standard deviation of the number of monthly logins<br/>- **nbr_logins_monthly_count** : number of months where the used has logged on to the app |
+| aggregate_user_logs_history  | Perform aggregations per client on their history of listening behavior prior to a given date: <br/> - **total_secs_sum** : the total time spent by the user on the streaming service<br/> - **total_secs_mean** : average daily time spent by the user <br/> - **total_secs_std** : standard deviation of the time spent by the user<br/>                                                                                               |
 
