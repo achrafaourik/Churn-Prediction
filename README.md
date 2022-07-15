@@ -265,6 +265,22 @@ The `weighted average of the three final models` (**0.4** * *xgb* + **0.4** * *c
 
 Also, by **reusing the validation set and adding it to the training set**, it has also improved the model's performance since the model will learn some extra patterns from the additional churning customers instances.
 
+Below are graphs for the feature importance of two of the final models XGBoost and Random Forest :
+
+<p align="center"><img src="./images/xgb_feat_importance.png" width=950><p>
+
+<p align="center"><img src="./images/random_forest_feature_importance.png" width=950><p>
+
+We can see from both of the plots of the feature importance of XGBoost and CatBoost that the two features `is_auto_renew_sum` and `is_auto_renew_mean`, meaning that these two features have a larger effect on the model when doing predictions.
+
+We have already made this insight from the Exploratory Data Analysis where we found that the clients that don't have the `auto_renew` feature toggled on are most likely to churn.
+
+We can also gather from the Random Forest Feature Importance that the variables `days_last_trx`,
+`num_unq_std`, `nbr_logins_monthly_std` contribute the most for its predictions. 
+The **number of days since the client has done a subscription**, 
+**the standard deviation of the unique songs that client listens to** but also the
+**standard deviation of the months when the client has used the streaming platform**  
+are all very important for the model.
 
 ### Contact Me
 
