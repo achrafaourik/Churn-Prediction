@@ -160,3 +160,6 @@ Thumbs.db
 # csv files
 *.csv
 
+# catboost
+catboost_info/
+
