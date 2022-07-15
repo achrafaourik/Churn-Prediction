@@ -86,7 +86,7 @@ Music Streaming providers like KKBox could really benefit from integration data 
 business value since the data collected from their clients is really informative. 
 
 
-You can find <a href="https://nbviewer.org/github/achrafaourik/Customer-Retention/blob/master/eda.ipynb">here</a> the Exploratory Data Analysis for generating initial insights in regard to the behavior of churning 
+You can find <a href="https://nbviewer.org/github/achrafaourik/Customer-Retention/blob/master/Exploratory_Data_Analysis_Cleaning.ipynb">here</a> the Exploratory Data Analysis for generating initial insights in regard to the behavior of churning 
 clients and the difference between them and renewing clients. <br> 
 The EDA step of the project is very important since it can point us at the right variables that are related to the churn 
 rate of the clients. <br>
@@ -94,8 +94,11 @@ rate of the clients. <br>
 
 I have also made predictive models that are able to accurately predict which clients are more
 likely to churn (not renewing their subscription within one month of their subscription's expiry date). <br>
-You can find the notebook of the modeling phase <a href="#">here</a>.
+You can find the notebook of the modeling phase <a href="https://nbviewer.org/github/achrafaourik/Customer-Retention/blob/master/Modeling.ipynb">here</a>.
 
+An extra step has been also made, which is the Clustering of the clients (also called Clients Segmentation),
+where the goal is to group together clients that have the same profile / behavior. <br>
+The notebook for the Clustering phase can be found <a href="https://nbviewer.jupyter.org/github/achrafaourik/Customer-Retention/blob/master/Clustering.ipynb">here</a>.
 
 Having access to both EDA and the predictive model is very useful for the company to make intelligent decisions 
 about what they should do in order to keep their customers.
@@ -232,3 +235,33 @@ of cores at our disposal**.
 |:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **stats_churn**       | Aggregations of features related to the churn history: <br/> - **churn_sum**: the total number of times the client has churned before. <br/> - **churn_mean**: percentage of the time the client has churned earlier. |
  
+### Modeling
+The step following the `Feature Engineering` process, is the modeling phase where the goal is to
+create a mathematical model that is capable of generating business value from some given data.
+
+In our use case, the goal is to predict the clients that will churn (clients that will not renew 
+their subscription 30 days after their current's subscription's expiry date).
+
+In order to accurately predict churners, or in any machine learning problem, we try to feed the model
+with highly predictive variables that contain patterns and correlations associated with the target
+variable we try to predict.
+
+The modeling phase will contain multiple steps or iterations where we try at each time to 
+improve the model's performance whether by tuning its hyper-parameters : also called
+Hyper-Parameter Tuning or by selecting only the features or variables that are actually useful : 
+a process that's called Feature Selection. It is also possible to combine the predictions of 
+multiple models to create a model that's even more powerful than every one of them.
+
+What follows are the results obtained throughout the whole modeling process (starting from the 
+baseline model all the way up to the final model):
+
+<p align="center"><img src="./images/evolution_iterations.png" width=950><p>
+
+We can see from the previous graph, that along the process of the modeling phase, we were able to improve the model's performance (in terms of AUC score) from **65%** all the way up to **85%** which is a **20%%** increase.
+
+We should note that the best improvements to the model came from `Hyper-Parameter Tuning` and `Feature Selection` which have gotten rid of useless features and optimized the initial parameters of the base model.
+
+The `weighted average of the three final models` (**0.4** * *xgb* + **0.4** * *cat* + **0.2** * *rf*) has further improved the machine learning algorithm. 
+
+Also, by **reusing the validation set and adding it to the training set**, it has also improved the model's performance since the model will learn some extra patterns from the additional churning customers instances.
+
