@@ -1,4 +1,4 @@
-# KKBOX's Churn Prediction Project
+# Churn Prediction Project
 
 ## Problem Statement
 
@@ -174,7 +174,7 @@ After following several approaches to select the appropriate number of clusters
 for the KMeans algorithm in this <a href="./Clustering">notebook</a>, I have found
 that choosing n_clusters=5 is the best for this use case's dataset.
 
-#### KMeans algorithm centroids 
+#### KMeans algorithm centroids ddagunos
 <p align="center"><img src="./images/clusters_centroids.png" width=950><p>
 
 **Insights generated from the centroids of the KMeans clustering :**
@@ -236,7 +236,7 @@ of cores at our disposal**.
 | **stats_churn**       | Aggregations of features related to the churn history: <br/> - **churn_sum**: the total number of times the client has churned before. <br/> - **churn_mean**: percentage of the time the client has churned earlier. |
  
 ### Modeling
-The step following the `Feature Engineering` process, is the modeling phase where the goal is to
+The step following the `Feature Engineering` process, is the `Modeling` phase where the goal is to
 create a mathematical model that is capable of generating business value from some given data.
 
 In our use case, the goal is to predict the clients that will churn (clients that will not renew 
