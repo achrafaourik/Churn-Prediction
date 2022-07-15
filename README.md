@@ -265,3 +265,10 @@ The `weighted average of the three final models` (**0.4** * *xgb* + **0.4** * *c
 
 Also, by **reusing the validation set and adding it to the training set**, it has also improved the model's performance since the model will learn some extra patterns from the additional churning customers instances.
 
+
+### Contact Me
+
+| Contact Method     |                                           |
+|--------------------|-------------------------------------------|
+| Email              | achrafaourik@gmail.com                    |
+| LinkedIn           | https://www.linkedin.com/in/achrafaourik/ |
