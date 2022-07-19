@@ -75,7 +75,7 @@ and when doing training and cross-validation.
 ## Introduction
 Enclosed in this folder, there can be found my analysis that I did to the real world
 data provided by KKBox that contain their client's listening behavior as well as their personal information. I have used
-Altair, Seaborn and Matplotlib for generating the graphs. As for the modeling part, I have used : `pandas`, `pyspark`,
+`altair`, `seaborn` and `matplotlib` for generating the graphs. As for the modeling part, I have used : `pandas`, `pyspark`,
 `vaex` and `dask`. 
 
 Some datasets are fairly large in size and cannot fit into the computer's memory, this is why i used libraries such as `vaex`
