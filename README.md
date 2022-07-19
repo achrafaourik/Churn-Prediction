@@ -75,13 +75,15 @@ and when doing training and cross-validation.
 ## Introduction
 Enclosed in this folder, there can be found my analysis that I did to the real world
 data provided by KKBox that contain their client's listening behavior as well as their personal information. I have used
-`altair`, `seaborn` and `matplotlib` for generating the graphs. As for the modeling part, I have used : `pandas`, `pyspark`,
-`vaex` and `dask`. 
+`altair`, `seaborn` and `matplotlib` for generating the graphs. 
 
-Some datasets are fairly large in size and cannot fit into the computer's memory, this is why i used libraries such as `vaex`
+As for the feature engineering part, I have used : `pandas`, `pyspark`,
+`vaex` and `dask`. Some datasets are fairly large and cannot fit into the computer's memory, this is why i used libraries such as `vaex`
 in order to be able to process them, since `vaex` is a python library made exactly for **Out-of-core** dataframes.
 
-
+As for the modeling part, I have used `scikit-learn` , `XGBoost` and `CatBoost`. `scikit-learn` provides most of the implementations 
+of state-of-the-art models (especially in supervised learning using tabular data).
+scikit-learn
 ### Motivation
 The use of machine learning and data mining techniques has exploded during the last few years due the fact they enable
 the business decisions takers to make wise decisions by taking into consideration the insights generated from them.
